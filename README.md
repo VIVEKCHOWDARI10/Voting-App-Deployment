@@ -57,6 +57,8 @@ OPTION 2 :
 kubectl get  node  -o wide
 ```
 ACCESS THE APPLICATION AT :
-
-http://nodeip:nodeport
+VOTING APP AT:
+http://node-ip:nodeport
+RESULT APP AT:
+http://node-ip:nodeport
 
