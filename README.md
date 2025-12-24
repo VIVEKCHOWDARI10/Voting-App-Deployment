@@ -23,7 +23,7 @@ The project showcases the use of Pods, Deployments, and Services in a Kubernetes
 
 STEPS TO DEPLOY :
 minkube start --driver=docker 
-git clone 
+git clone https://github.com/VIVEKCHOWDARI10/Voting-App-Deployment.git
 1. cd Voting-App-Deployment
 2. kubectl apply -f .
 3. kubectl get pods , kubectl get services ,kuebctl get deployments 
