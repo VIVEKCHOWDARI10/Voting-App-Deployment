@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service 
+metadata: 
+   name: vote
+   labels:
+     app: vote
+
+spec:
+  type: NodePort      #  N and P should be capital
+  ports:
+   - name: "vote-service"
+     port: 8080
+     targetPort: 80
+     nodePort: 31000        # n is small p is capital 
+  selector:
+    app: vote
+    

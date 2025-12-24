@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment    # D should be capital 
+metadata: 
+  name: redis
+  labels:
+    app: redis
+spec:
+  template:
+        metadata:
+          name: redis
+          labels:
+            app: redis
+        spec:
+          containers:
+           - name: redis
+             image: redis:alpine
+             ports:
+              - containerPort: 6379
+                name: redis
+  replicas: 1
+  selector:
+    matchLabels:      # L should be capital 
+       app: redis

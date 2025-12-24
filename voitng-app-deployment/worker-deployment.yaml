@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment    # D should be capital 
+metadata: 
+  name: worker
+  labels:
+    app: worker 
+spec:
+  template:
+      metadata:
+        name: worker
+        labels:
+         app: worker
+      spec:
+       containers:
+        - name: worker
+          image: dockersamples/examplevotingapp_worker
+       
+  replicas: 1
+  selector:
+    matchLabels:      # L should be capital 
+       app: worker

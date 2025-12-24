@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment    # D should be capital 
+metadata: 
+  name: db
+  labels:
+    app: db
+spec:
+  template:
+        metadata:
+         name: db
+         labels:
+           app: db
+        spec:
+         containers:
+          - name: postgres
+            image: postgres:15-alpine
+            env:
+             - name: POSTGRES_USER
+               value: postgres
+             - name: POSTGRES_PASSWORD
+               value: postgres
+            ports:
+             - containerPort: 5432
+               name: postgres
+  replicas: 1
+  selector:
+    matchLabels:      # L should be capital 
+       app: db
