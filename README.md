@@ -25,7 +25,7 @@ The project showcases the use of Pods, Deployments, and Services in a Kubernetes
 
 START THE MINIKUBE: 
 ```bash
-  minikube start --driver=docker
+minikube start --driver=docker
 ```
 
 CLONE THE REPO:
@@ -41,7 +41,13 @@ cd Voting-App-Deployment
 kubectl apply -f .
 ```
 ```bash 
-kubectl get pods , kubectl get services ,kubectl get deployments
+kubectl get pods
+```
+```bash
+ kubectl get services
+```
+```bash
+kubectl get deployments
 ```
 
  ## ACCESS THE APPLICATION ##
