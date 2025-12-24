@@ -24,17 +24,23 @@ The project showcases the use of Pods, Deployments, and Services in a Kubernetes
 ## STEPS TO DEPLOY ##
 
 START THE MINIKUBE: 
- * minkube start --driver=docker
+ * minikube start --driver=docker
 
 CLONE THE REPO:
- * git clone https://github.com/VIVEKCHOWDARI10/Voting-App-Deployment.git
+```bash
+git clone https://github.com/VIVEKCHOWDARI10/Voting-App-Deployment.git
+```
 
 COMMANDS :
-1. cd Voting-App-Deployment
+```bash
+1.cd Voting-App-Deployment
+```
+```bash
 2. kubectl apply -f .
-3. kubectl get pods , kubectl get services ,kuebctl get deployments
+```
+3. kubectl get pods , kubectl get services ,kubectl get deployments
 
- ## ACESS THE APPLICATION ##
+ ## ACCESS THE APPLICATION ##
  
 OPTION 1:
 4. minikube service vote --url
@@ -45,5 +51,5 @@ OPTION 2 :
 
 ACCESS THE APPLICATION AT :
 
-7. htpp://nodeip:nodeport
+7. http://nodeip:nodeport
 
