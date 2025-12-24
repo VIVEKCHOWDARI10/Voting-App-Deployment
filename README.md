@@ -41,9 +41,9 @@ OPTION 1:
 
 OPTION 2 :
 5. kubectl get nodes
-6. kubectl get  node node-name -o wide
+
+6. kubectl get  node  -o wide
 
 ACCESS THE APPLICATION AT :
-
 8. htpp://nodeip:nodeport
 
