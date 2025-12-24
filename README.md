@@ -30,6 +30,6 @@ STEPS TO DEPLOY :
   ## ACESS THE APPLICATION :
 4. minikube service vote --url    or
 5. kubectl get nodes
-6. kubectl get  node <node-name> -o wide
-7. htpp://<node-ip>:<node-port>
+6. kubectl get  node node-name -o wide
+7. htpp://nodeip:nodeport
 --END--
